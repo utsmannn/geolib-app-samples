@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.utsman.geolibsample.fragments.LocationFragment"
+        android:label="Location" >
+        <action
+            android:id="@+id/action_locationFragment_to_locationSearchFragment"
+            app:destination="@id/locationSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.utsman.geolibsample.fragments.HomeFragment"
+        android:label="@string/app_name" >
+        <action
+            android:id="@+id/action_homeFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_routesListFragment"
+            app:destination="@id/routesListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_polylineFragment"
+            app:destination="@id/polylineFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_markerFragment"
+            app:destination="@id/markerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_grabLocationPickerFragment"
+            app:destination="@id/grabPickupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationSearchFragment"
+        android:name="com.utsman.geolibsample.fragments.LocationSearchFragment"
+        android:label="Search Location" />
+    <fragment
+        android:id="@+id/routesListFragment"
+        android:name="com.utsman.geolibsample.fragments.RoutesListFragment"
+        android:label="Routes" />
+    <fragment
+        android:id="@+id/polylineFragment"
+        android:name="com.utsman.geolibsample.fragments.PolylineFragment"
+        android:label="Polyline Animation" />
+    <fragment
+        android:id="@+id/markerFragment"
+        android:name="com.utsman.geolibsample.fragments.MarkerFragment"
+        android:label="Marker" />
+    <fragment
+        android:id="@+id/grabPickupFragment"
+        android:name="com.utsman.geolibsample.fragments.GrabPickupFragment"
+        android:label="GrabPickupFragment" >
+        <action
+            android:id="@+id/action_grabPickupFragment_to_grabListPickerFragment"
+            app:destination="@id/grabListPickerFragment" />
+        <action
+            android:id="@+id/action_grabPickupFragment_to_grabConfirmPickerFragment"
+            app:destination="@id/grabConfirmPickerFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/grabListPickerFragment"
+        android:name="com.utsman.geolibsample.fragments.GrabListPickerFragment"
+        android:label="GrabListPickerFragment" >
+        <action
+            android:id="@+id/action_grabListPickerFragment_to_grabConfirmPickerFragment"
+            app:destination="@id/grabConfirmPickerFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/grabConfirmPickerFragment"
+        android:name="com.utsman.geolibsample.fragments.GrabConfirmPickerFragment"
+        android:label="GrabConfirmPickerFragment" >
+        <action
+            android:id="@+id/action_grabConfirmPickerFragment_to_grabResultFragment"
+            app:destination="@id/grabResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grabResultFragment"
+        android:name="com.utsman.geolibsample.fragments.GrabResultFragment"
+        android:label="GrabResultFragment" />
+</navigation>

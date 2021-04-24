@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_current_location"
+        android:title="Get Current Location"/>
+
+    <item android:id="@+id/action_get_place"
+        android:title="Get Current Place Address"/>
+
+    <item android:id="@+id/action_search_location"
+        android:title="Search Location"/>
+
+</menu>

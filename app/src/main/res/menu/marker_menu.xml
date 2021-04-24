@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_bitmap_marker"
+        android:title="Bitmap Marker"/>
+
+    <item android:id="@+id/action_lottie_marker"
+        android:title="Lottie Marker"/>
+
+    <item android:id="@+id/action_clear_marker"
+        android:title="Clear All Marker"/>
+
+</menu>

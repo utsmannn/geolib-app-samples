@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_block_animation"
+        android:title="Block Stack Animation" />
+
+    <item
+        android:id="@+id/action_wait_animation"
+        android:title="Wait Stack Animation" />
+
+    <item
+        android:id="@+id/action_off_animation"
+        android:title="Off Stack Animation" />
+
+</menu>

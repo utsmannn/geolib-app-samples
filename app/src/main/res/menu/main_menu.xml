@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home" />
+
+    <group android:id="@+id/group_library">
+        <item
+            android:id="@+id/locationFragment"
+            android:title="Location" />
+        <item
+            android:id="@+id/routesListFragment"
+            android:title="Routes" />
+        <item
+            android:id="@+id/polylineFragment"
+            android:title="Polyline" />
+        <item
+            android:id="@+id/markerFragment"
+            android:title="Marker"/>
+
+    </group>
+</menu>

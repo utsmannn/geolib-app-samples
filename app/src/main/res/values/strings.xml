@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Geolib App Showcase</string>
+    <string name="description">The collection libraries of utility Google Maps SDK for Android. Build for modern architecture with Kotlin and Coroutine.</string>
+    <string name="copyright">Copyright © 2021 Muhammad Utsman</string>
+</resources>
